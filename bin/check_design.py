@@ -59,7 +59,7 @@ def reformat_design(DesignFile,ReadMappingFile,ControlMappingFile):
             if numCols not in [6]:
                 print("{}: Invalid number of columns (should be 6)!\nLine: '{}'".format(ERROR_STR,line.strip()))
                 sys.exit(1)
-            numColList.append(numCols)
+            numColList.append(fastQFiles)
 
             ## CHECK GROUP ID DOESNT CONTAIN SPACES
             if group.find(' ') != -1:
